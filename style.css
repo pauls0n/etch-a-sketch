@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #77d970;
+  --primary-font: "Comic Neue", cursive;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+  padding: 10rem 2rem;
+  font-family: var(--primary-font);
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+header > h1 {
+  font-size: 3.6rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  border: none;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s background-color;
+}
+
+button:hover, button:focus {
+  background-color: #ffffff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer > p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+footer > p > a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+footer > p > a:hover, footer > p > a:focus {
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  background-color: #E8E8E8;
+  width: 500px;
+  height: 500px;
+}
+
+.grid-item {
+  transition: 0.5s background-color;
+}
